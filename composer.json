@@ -1,0 +1,34 @@
+{
+    "name": "josebasmtz/laravel-mvc-sr-core",
+    "description": "Basic structure for laravel projects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Martinez",
+            "email": "josebasmtzx@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Josebasmtz\\MvcSrCore\\": "src/"
+        },
+        "files": [
+            "src/Helpers/GeneralHelper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "provider": [
+                "Josebasmtz\\MvcSrCore\\Providers\\MvcSrCoreServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
